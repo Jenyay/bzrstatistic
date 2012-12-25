@@ -1,0 +1,92 @@
+------------------------------------------------------------
+revno: 1003
+tags: outwiker-1.7.0
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Fri 2012-12-14 11:08:23 +0400
+message:
+  Дополнение в ToDo
+------------------------------------------------------------
+revno: 1002
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Mon 2012-12-10 20:21:09 +0400
+message:
+  Дополнение в ToDo
+------------------------------------------------------------
+revno: 1001
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Tue 2012-12-04 21:45:24 +0400
+message:
+  Дополнение в ToDo
+------------------------------------------------------------
+revno: 1000
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-12-01 11:52:49 +0400
+message:
+  Дополнения в справке
+------------------------------------------------------------
+revno: 999
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Tue 2012-11-27 21:52:15 +0400
+message:
+  Несколько улучшено оформление HTML-кода. Перед тегами H1, H2... теперь упибаются теги BR
+------------------------------------------------------------
+revno: 998
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Tue 2012-11-27 21:26:09 +0400
+message:
+  Обновление версии и списка ToDo
+------------------------------------------------------------
+revno: 997
+committer: Eugeniy Ilin <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Tue 2012-11-27 21:07:44 +0400
+message:
+  Улучшено разворачивание главного окна из трея
+------------------------------------------------------------
+revno: 996
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 19:48:29 +0400
+message:
+  Дополнение в ToDo
+------------------------------------------------------------
+revno: 995
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 19:31:32 +0400
+message:
+  Добавлена сборка архива со всеми плагинами
+------------------------------------------------------------
+revno: 994
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 19:07:58 +0400
+message:
+  Исправления в переводах
+------------------------------------------------------------
+revno: 993
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 16:07:56 +0400
+message:
+  Обновление русской локализации
+------------------------------------------------------------
+revno: 992
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 11:23:58 +0400
+message:
+  Новые подчеркивания в меню на английском языке
+------------------------------------------------------------
+revno: 991
+committer: Jenyay <jenyay.ilin@gmail.com>
+branch nick: trunk
+timestamp: Sat 2012-11-24 10:43:23 +0400
+message:
+  Расставил подчеркивания в англоязычных меню
