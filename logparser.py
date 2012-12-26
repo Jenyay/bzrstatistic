@@ -11,13 +11,13 @@ class LogParser (object):
     """
     Класс для парсинга лога
     """
-    def __init__ (self, fname):
+    def __init__ (self, logstr):
         """
-        fname - имя файла с логом
+        logstr - содержимое лога
         """
         self._commitRegEx = re.compile (r".*timestamp: \w+ (?P<year>\d\d\d\d)-(?P<month>\d\d)-(?P<day>\d\d) (?P<hour>\d\d):(?P<minute>\d\d):(?P<second>\d\d)", flags=re.MULTILINE | re.UNICODE)
 
-        self._commitList = self._parseFile (fname)
+        self._commitList = self._parseLog (logstr)
 
 
     @property
@@ -25,15 +25,12 @@ class LogParser (object):
         return self._commitList
 
 
-    def _parseFile (self, fname):
+    def _parseLog (self, logstr):
         """
-        Разбор файла с логом
+        Разбор лога
         """
-        with open (fname) as fp:
-            allLog = fp.read()
-
         # Выкидываем первую запись, т.к. она пустая
-        allItems = re.split (r"^\s*-+$", allLog, flags=re.MULTILINE | re.UNICODE)[1:]
+        allItems = re.split (r"^\s*-+$", logstr, flags=re.MULTILINE | re.UNICODE)[1:]
         commits = self._createCommits (allItems)
 
         return commits

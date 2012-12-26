@@ -16,10 +16,15 @@ class LogParserTest (unittest.TestCase):
         pass
 
 
+    def loadFile (self, fname):
+        with open (fname) as fp:
+            return fp.read()
+
+
     def testParseItemsWithMerge (self):
         fname = u"examples/example_3_small.log"
 
-        parser = LogParser (fname)
+        parser = LogParser (self.loadFile (fname))
         self.assertEqual (len (parser.commits), 20)
 
         self.assertEqual (parser.commits[0].date, 
@@ -38,7 +43,7 @@ class LogParserTest (unittest.TestCase):
     def testParseItems (self):
         fname = u"examples/example_1_small.log"
 
-        parser = LogParser (fname)
+        parser = LogParser (self.loadFile (fname))
         self.assertEqual (len (parser.commits), 13)
 
         self.assertEqual (parser.commits[0].date, 
@@ -51,9 +56,6 @@ class LogParserTest (unittest.TestCase):
                 datetime.datetime (2012, 11, 24, 10, 43, 23))
 
 
-
-    def testParseInvalidFileName (self):
-        self.assertRaises (IOError, LogParser, u"example/notfount.log")
 
 
 if __name__ == "__main__":
