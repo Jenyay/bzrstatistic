@@ -40,12 +40,18 @@ class LogParser (object):
         """
         По элементам лога создать список коммитов
         """
-        return [self._createCommitByItem (item) for item in items]
+        commits = [self._createCommitByItem (item) for item in items]
+
+        # Удалим None из списка
+        commits = [commit for commit in commits if commit != None]
+
+        return commits
 
     
     def _createCommitByItem (self, item):
         match = self._commitRegEx.search (item)
-        assert match != None
+        if match == None:
+            return
 
         date = datetime.datetime (
                 int (match.group ("year")),
